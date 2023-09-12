@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Online Music Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="proj.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <h1>Music Store</h1>
+  </header>
+  <div id="top">
+    <div id=userData style="display:none"></div>
+    <div id=search>
+      <input id="searchBar" placeholder="Keyword(s)">
+      <div id="searchBtn" class="button" onclick="search()">Search</div>
+    </div>
+    <div id="uiBtn">
+      <div id="signBtn" class="button">Sign In</div>
+      <div id="regBtn" class="button">Register</div>
+      <div id="logoutBtn" class="button" style="display:none">Logout</div>
+      <div id="cartBtn" class="button">Cart</div>
+      <div id="cartQuan">0 in cart</div>
+    </div>
+  </div>
+  <div id="logOrReg" style="display:none">
+    <div id="closebttn" class="button" onclick="closelogOrReg()">Close</div>
+    <div id="loginPage" style="display:none">
+      <h3>Login</h3>
+      <h1 id="loginStatus"></h1>
+      <input id="loginName" type="text" placeholder="Username">
+      <input id="loginPw" type="password" placeholder="Password">
+      <div id="submit" class="button">Submit</div>
+      <div id="create" class="button">Create an Account</div>
+    </div>
+    <div id="regPage" style="display:none">
+      <h3>Register</h3>
+      <h1 id="regStatus"></h1>
+      <input id="newName" type="text" type="text" placeholder="Desired Username">
+      <input id="newPw" type="password" placeholder="Desired Password">
+      <div id="confirm" class="button">Confirm</div>
+      <div id="back" class="button">Back to Login</div>
+    </div>
+    <img src="https://image.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg"></img>
+  </div>
+  <div id="landing">
+    <div id="categories">
+      <h3>Categories</h3>
+      <div id="Classical" class="button">Classical</div>
+      <div id="Baroque" class="button">Baroque</div>
+      <div id="Romantic" class="button">Romantic</div>
+      <div id="Late 19th" class="button">Late 19th</div>
+    </div>
+    <div id="main">
+      <div id="location">
+        <div id="home" class='button' onclick="changePage('home')">Home</div>
+      </div>
+      <div id="itemstatus">All Music</div>
+      <div id="items"></div>
+      <div id="stock"></div>
+      <div id="cartPage" style="display:none">
+        <h3>My Shopping Cart</h3>
+        <div id="cartObject"></div>
+        <div id="totalPrice">Total price: $0</div>
+        <div id="cartBack" class="button" onclick="changePage('home')">Back</div>
+        <div id="checkout" class="button" onclick="checkout()">Checkout</div>
+      </div>
+    </div>
+  </div>
+  <div id="checkoutPage" style="display:none">
+    <div id="checkRegOrLog" style="display:none">
+      <div>A new customer? Please checkout below.</div>
+      <div>Already have an account? Please </div>
+      <div class="button" onclick="toLog(),checkout()">Sign In</div>
+    </div>
+    <div id="regFast" style="display:none">
+      <h3>Create Account:</h3>
+      <div>Username: </div>
+      <input id="newNamef" type="text" type="text" placeholder="Desired Username">
+      <div id="newNamefCheck"></div>
+      <div>Password: </div>
+      <input id="newPwf" type="password" placeholder="Desired Password">
+    </div>
+    <div id="address">
+      <h3>Delivery Address: </h3>
+      <div>Full Name: </div>
+      <input id="checkname" placeholder="Required">
+      <div>Company Name: </div>
+      <input id="company">
+      <div>Address Line 1: </div>
+      <input id="a1" placeholder="Required">
+      <div>Address Line 2: </div>
+      <input id="a2">
+      <div>City: </div>
+      <input id="city" placeholder="Required">
+      <div>Region/State/District: </div>
+      <input id="region">
+      <div>Country: </div>
+      <input id="country" placeholder="Required">
+      <div>Postcode/Zip Code: </div>
+      <input id="post" placeholder="Required">
+    </div>
+    <div id="yourOrder">
+      <h3>Your Order: </h3>
+      <div id="changeOrderBtn" class="button" onclick="toCart()">Change order</div>
+      <div>Free Standard Shipping</div>
+      <div id="orderList"></div>
+      <div id="checkoutTotalPrice"></div>
+      <div id="checkoutConfirm" class="button" onclick="invoice()">Confirm</div>
+    </div>
+  </div>
+  <div id="invoicePage" style="display:none"></div>
+</body>
+
+</html>

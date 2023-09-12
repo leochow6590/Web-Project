@@ -1,0 +1,338 @@
+#logOrReg {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  height: 400px;
+  background-color: lightblue;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.new {
+  color: red;
+}
+
+header {
+  text-align: center;
+}
+
+#closebttn {
+  position: absolute;
+  text-align: center;
+  top: 1%;
+  right: 1%;
+  background-color: lightsalmon;
+  width: 10%;
+}
+
+#loginPage, #regPage {
+  text-align: center;
+}
+
+#loginPage>input, #regPage>input {
+  display: block;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+  margin-bottom: 2%;
+}
+
+#submit, #create, #confirm, #back {
+  display: block;
+  align-items: center;
+  margin-left: 37%;
+  margin-right: 37%;
+  margin-bottom: 2%;
+  width: 26%;
+  background-color: white;
+}
+
+#welcome {
+  text-align: center;
+  align-items: center;
+  font-size: 200%;
+}
+
+.invalid {
+  color: red;
+}
+
+#landing {
+  display: flex;
+}
+
+#main {
+  display: block;
+  width: 90%;
+}
+
+#categories {
+  display: block;
+  text-align: center;
+  width: 15%;
+  border-right: 5px solid black;
+}
+
+#categories>.button {
+  margin-bottom: 10%;
+  display: block;
+  text-align: center;
+  background-color: lightblue;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+#top {
+  padding-bottom: 5%;
+  border-bottom: 5px solid black;
+}
+
+#searchBar {
+  margin-left: 5%;
+  width: 85%;
+  display: inline;
+}
+
+input {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#searchBtn {
+  display: inline-block;
+  text-align: center;
+  background-color: lightblue;
+  width: 8%;
+}
+
+#uiBtn {
+  float: right;
+  margin-top: 2%;
+  width: 30%;
+}
+
+#uiBtn>.button {
+  display: inline-block;
+  text-align: center;
+  margin-left: 1%;
+  width: 25%;
+  background-color: lightsalmon;
+}
+
+#cartQuan {
+  display: inline-block;
+  font-size: 70%;
+}
+
+#location {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+
+#location>div {
+  display: inline-block;
+}
+
+#itemstatus {
+  margin-bottom: 1%;
+  font-size: 120%;
+  font-weight: bolder;
+  margin-left: 2%;
+}
+
+#logOrReg>img {
+  width: 100%;
+  height: auto;
+}
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  height: 50%;
+}
+
+.block>img {
+  width: 100%;
+  height: 100%;
+}
+
+.block>.musicName {
+  font-size: 120%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#home, #catLocation {
+  color: blue;
+  text-decoration: underline;
+}
+
+#arrow {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#stock>div {
+  margin: 1%;
+}
+
+#stock>img {
+  width: 30%;
+  height: auto;
+  margin: 1%;
+}
+
+#stock>audio {
+  margin-bottom: 60px;
+}
+
+#stock>.musicName {
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+.order>div, .order>input {
+  display: inline-block;
+  margin-right: 1%;
+}
+
+.order>.button {
+  background-color: lightsalmon;
+  width: 13%;
+  text-align: center;
+}
+
+#cartObject>div {
+  border-bottom: 3px solid black;
+  margin-bottom: 1%;
+}
+
+.button.del {
+  display: block;
+  width: 10%;
+  background-color: #FFB6C1;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+#cartPage {
+  font-size: 110%;
+}
+
+#cartPage>.button {
+  display: inline-block;
+  margin-right: 1%;
+  background-color: #FFFACD;
+  width: 10%;
+  text-align: center;
+}
+
+#newNamefCheck {
+  color: red;
+  display: inline-block;
+}
+
+#newNamef {
+  display: inline-block;
+  margin-bottom: 1%;
+  font-size: 110%;
+}
+
+#newPwf {
+  display: block;
+  font-size: 110%;
+}
+
+#invoicePage>div {
+  font-size: 130%
+}
+
+#checkRegOrLog>div {
+  display: inline-block;
+  font-size: 170%;
+  margin-bottom: 2%;
+}
+
+#checkRegOrLog>.button {
+  color: blue;
+  text-decoration: underline;
+}
+
+#address>input {
+  margin-bottom: 1%;
+  font-size: 110%;
+  width: 30%;
+}
+
+#address>div {
+  font-size: 130%;
+}
+
+#regFast>h3, #address>h3, #yourOrder>h3 {
+  font-size: 130%;
+}
+
+#yourOrder>div {
+  margin-bottom: 1%;
+  font-size: 130%;
+}
+
+#regFast>div {
+  font-size: 130%;
+}
+
+#changeOrderBtn {
+  color: blue;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+#checkoutConfirm {
+  background-color: lightsalmon;
+  width: 8%;
+  text-align: center;
+}
+
+#orderList>div>div {
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 90%;
+}
+
+#invoicePage>div {
+  margin-bottom: 1%;
+}
+
+#invoicePage>div>.button {
+  background-color: lightsalmon;
+  width: 8%;
+  text-align: center;
+  margin-left: 280px;
+}
+
+#invoicePage>div>div {
+  margin-bottom: 1%;
+}
+
+span {
+  font-weight: bolder;
+}
+
+#checkoutTotalPrice {
+  font-weight: bolder;
+}
